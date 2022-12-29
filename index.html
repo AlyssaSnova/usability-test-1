@@ -7,6 +7,10 @@
             content="text/html; charset=utf-8"
         />
         <meta
+            http-equiv="x-ua-compatible"
+            content="ie=edge"
+        />
+        <meta
             name="viewport"
             content="width=device-width, initial-scale=1, maximum-scale=1"
         />
@@ -14,7 +18,7 @@
     </head>
     <body>
         <script>
-            const index = (Math.random()>=0.5) ? 1 : 0;
+            const index = new Date().getSeconds() < 30 === 0 ? 1 : 0;
             const urls = ["https://app.usabilityhub.com/do/45770b0c925/f89f", "https://app.usabilityhub.com/do/b097747b90f4/72e8"];
             const url = urls[index];
 
